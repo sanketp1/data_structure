@@ -1,4 +1,4 @@
-package binary_search_problems;
+package com.dsa.binary_search;
 
 
 /*

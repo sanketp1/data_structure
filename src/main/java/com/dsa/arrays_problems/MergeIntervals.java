@@ -52,7 +52,7 @@ public class MergeIntervals {
 		 if (intervals.length == 0) return new int[0][0];
 
 	        // Sort intervals based on the starting time
-	        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+//	        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
 	        List<int[]> merged = new ArrayList<>();
 	        for (int[] interval : intervals) {
