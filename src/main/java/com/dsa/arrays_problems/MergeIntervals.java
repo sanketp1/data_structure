@@ -37,22 +37,24 @@ public class MergeIntervals {
 //		int[][] intervals1 = {{1,3},{2,6},{8,10},{15,18}};
 		int[][] intervals1 = {{1,4},{0,1}};
 		int[][] merged = merge(intervals1);
-		
+
+		System.out.println("Answer: ");
 		for(int[] x : merged) {
 			System.out.println(Arrays.toString(x));
 		}
 		
-		//TESTCASE 2
-		int[][] intervals2 = {{1,4},{4,5}};
-		System.out.println(Arrays.toString(merge(intervals2)));
+//		//TESTCASE 2
+//		int[][] intervals2 = {{1,4},{4,5}};
+//		System.out.println(Arrays.toString(merge(intervals2)));
 	}
 	
 	public static int[][] merge(int[][] intervals){
 		
 		 if (intervals.length == 0) return new int[0][0];
 
-	        // Sort intervals based on the starting time
-//	        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+
+			// Sort intervals based on the starting time
+	        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 
 	        List<int[]> merged = new ArrayList<>();
 	        for (int[] interval : intervals) {

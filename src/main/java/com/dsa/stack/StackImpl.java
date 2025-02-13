@@ -1,12 +1,12 @@
 package com.dsa.stack;
 
-public class Stack {
+public class StackImpl {
 
     private int[] arr;
     private int size;
     private int top;
 
-    public Stack(int size) {
+    public StackImpl(int size) {
         this.size = size;
         this.arr = new int[this.size];
         //initially pointing at index -1
@@ -82,7 +82,7 @@ public class Stack {
 
     public static void main(String[] args) throws  Exception {
         //creating instance of Stack
-        Stack stack = new Stack(5);
+        StackImpl stack = new StackImpl(5);
 
         //checking stack is empty
         System.out.println("Is stack empty: "+(stack.isEmpty()?"YES":"NO"));
